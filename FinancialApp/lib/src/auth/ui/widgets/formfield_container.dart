@@ -14,7 +14,6 @@ class FormFieldContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 25.0),
       decoration: const BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(25.0)),
         boxShadow: [
