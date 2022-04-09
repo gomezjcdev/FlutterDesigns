@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.only(left: 25.0, right: 25.0),
           child: Column(
-            children: const [
+            children: [
               UserCard(),
             ],
           ),
