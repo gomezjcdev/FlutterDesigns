@@ -6,7 +6,7 @@ class CustomFormField extends StatefulWidget {
   final String hintText;
   final IconData inputIcon;
   bool isPasswordField;
-  bool showPasswordButton;
+  final bool showPasswordButton;
 
   CustomFormField({
     Key? key,

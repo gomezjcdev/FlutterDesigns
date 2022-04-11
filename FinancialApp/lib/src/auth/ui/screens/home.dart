@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:financial_app/src/auth/ui/widgets/transaction_list.dart';
 import 'package:financial_app/src/auth/ui/widgets/overview_section.dart';
 import 'package:financial_app/src/auth/ui/widgets/user_card.dart';
 import 'package:financial_app/src/utils/colors.dart';
@@ -13,14 +14,18 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: primaryColor,
       body: SafeArea(
-        child: Container(
-          margin: const EdgeInsets.only(left: 25.0, right: 25.0),
-          child: Column(
-            children: const [
-              UserCard(),
-              SizedBox(height: 30),
-              OverviewSection()
-            ],
+        child: SingleChildScrollView(
+          child: Container(
+            margin: const EdgeInsets.only(left: 25.0, right: 25.0),
+            child: Column(
+              children: [
+                const UserCard(),
+                const SizedBox(height: 30),
+                const OverviewSection(),
+                const SizedBox(height: 30),
+                TransactionList()
+              ],
+            ),
           ),
         ),
       ),
@@ -28,3 +33,5 @@ class Home extends StatelessWidget {
     );
   }
 }
+
+
