@@ -36,8 +36,11 @@ class TransactionList extends StatelessWidget {
       primary: false,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      itemBuilder: (context, index) => TransactionItem(
-        transactionItem: listItems[index],
+      itemBuilder: (context, index) => GestureDetector(
+        onTap: () => Navigator.pushNamed(context, 'detail'),
+        child: TransactionItem(
+          transactionItem: listItems[index],
+        ),
       ),
       itemCount: 3,
       separatorBuilder: (_, __) => const SizedBox(height: 20),

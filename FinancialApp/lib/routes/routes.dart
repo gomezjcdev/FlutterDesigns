@@ -1,3 +1,4 @@
+import 'package:financial_app/src/auth/ui/screens/transaction_detail.dart';
 import 'package:flutter/material.dart';
 
 import 'package:financial_app/src/auth/ui/screens/home.dart';
@@ -7,5 +8,6 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
   return <String, WidgetBuilder> {
     'login': (_) => const Login(),
     'home': (_) => const Home(),
+    'detail': (_) => const TransactionDetail(),
   };
 }

@@ -15,28 +15,36 @@ class TransactionItem extends StatelessWidget {
       width: double.infinity,
       height: 80,
       decoration: const BoxDecoration(
-        color: whiteColor,
-        borderRadius: BorderRadius.all(Radius.circular(25)),
-        boxShadow: [
-          BoxShadow(
-            color: secondaryColor,
-            blurRadius: 10,
-            offset: Offset(0, 5),
-            spreadRadius: 0,
-          )
-        ]
-      ),
+          color: whiteColor,
+          borderRadius: BorderRadius.all(Radius.circular(25)),
+          boxShadow: [
+            BoxShadow(
+              color: secondaryColor,
+              blurRadius: 10,
+              offset: Offset(0, 5),
+              spreadRadius: 0,
+            )
+          ]),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             margin: const EdgeInsets.only(left: 20),
-            decoration: const BoxDecoration(
-                color: iconBackground,
-                borderRadius: BorderRadius.all(Radius.circular(18))),
+            decoration: !transactionItem.noBackgroundIcon
+                ? null
+                : const BoxDecoration(
+                    color: iconBackground,
+                    borderRadius: BorderRadius.all(Radius.circular(18)),
+                  ),
             width: 50,
             height: 50,
-            child: Icon(transactionItem.icon, size: 35),
+            child: Icon(
+              transactionItem.icon,
+              size: 35,
+              color: !transactionItem.noBackgroundIcon
+                  ? buttonColor
+                  : Colors.black,
+            ),
           ),
           Expanded(
             child: Container(
