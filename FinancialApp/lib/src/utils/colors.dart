@@ -10,4 +10,5 @@ const buttonColor     = Color(0xFF3E4585);
 const tabOptionsColor = Color(0xFF535657);
 const titleColor      = Color(0xFF545B92);
 const iconBackground  = Color(0xFFE3E7F7);
+const ringColor       = Color(0xFFD7E6FD);
 const colorBlack      = Colors.black54;

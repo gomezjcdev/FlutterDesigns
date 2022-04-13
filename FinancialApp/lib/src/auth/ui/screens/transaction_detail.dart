@@ -1,5 +1,6 @@
 import 'package:financial_app/src/auth/ui/model/transaction_item.dart';
 import 'package:financial_app/src/auth/ui/widgets/main_button.dart';
+import 'package:financial_app/src/auth/ui/widgets/radial_menu.dart';
 import 'package:financial_app/src/auth/ui/widgets/transaction_item.dart';
 import 'package:flutter/material.dart';
 
@@ -26,9 +27,12 @@ class TransactionDetail extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Icon(Icons.chevron_left, size: 40),
-                  Icon(Icons.search_outlined, size: 40),
+                children: [
+                  GestureDetector(
+                    onTap: () => Navigator.of(context).pop(),
+                    child: const Icon(Icons.chevron_left, size: 40),
+                  ),
+                  const Icon(Icons.search_outlined, size: 40),
                 ],
               ),
               const SizedBox(height: 20),
@@ -69,7 +73,7 @@ class TransactionDetail extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              Expanded(child: Container()),
+              const Expanded(child: Center(child: RadialMenu())),
               const SizedBox(height: 20),
               MainButton(
                 onPressed: () => print('clicked'),
