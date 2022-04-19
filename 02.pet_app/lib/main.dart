@@ -19,16 +19,17 @@ class MyApp extends StatelessWidget {
       title: 'Pet App',
       theme: AppTheme.customTheme,
       home: Scaffold(
-          body: Container(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: const [
-                Header(),
-                Home(),
-              ],
-            ),
+        body: Container(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            children: const [
+              Header(),
+              Home(),
+            ],
           ),
-          bottomNavigationBar: const CustomNavigationBar()),
+        ),
+        bottomNavigationBar: const CustomNavigationBar(),
+      ),
     );
   }
 }

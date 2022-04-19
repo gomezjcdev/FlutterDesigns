@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppTheme {
   AppTheme._();
 
-  static const Color _iconColor = Colors.red;
+  static const Color _iconColor = Color(0xFFC4C4C4);
   static const Color _primaryColor = Color(0xFFCD8B32);
   static const Color _primaryVariantColor = Color(0xFFF8F8F8);
   static const Color _secondaryColor = Colors.green;
