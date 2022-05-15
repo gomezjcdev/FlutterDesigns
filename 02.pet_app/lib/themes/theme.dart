@@ -5,7 +5,7 @@ class AppTheme {
 
   static const Color _iconColor = Color(0xFFC4C4C4);
   static const Color _primaryColor = Color(0xFFCD8B32);
-  static const Color _primaryVariantColor = Color(0xFFF8F8F8);
+  static const Color _primaryVariantColor = Color(0xFFFFFFFF);
   static const Color _secondaryColor = Colors.green;
   static const Color _onPrimaryColor = Colors.black;
   static const Color _tabColor = Color(0xFFEDBF58);
@@ -14,6 +14,7 @@ class AppTheme {
   static const Color _profileBackground = Color(0xFFD5EBE1);
   static const Color _grayBackground = Color(0xFFF6F6F6);
   static const Color _hintText = Color(0xFFA7A7A7);
+  static const Color _colorBlack = Color(0xFF1B1B1B);
 
   static Color get tabColor => _tabColor;
   static Color get greenTitle => _greenTitle;
@@ -21,6 +22,7 @@ class AppTheme {
   static Color get profileBackground => _profileBackground;
   static Color get grayBackground => _grayBackground;
   static Color get hintText => _hintText;
+  static Color get colorBlack => _colorBlack;
 
   static final ThemeData customTheme = ThemeData(
     scaffoldBackgroundColor: _primaryVariantColor,

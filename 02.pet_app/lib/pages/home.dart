@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_app/widgets/filters.dart';
 import 'package:pet_app/widgets/search.dart';
 
 class Home extends StatelessWidget {
@@ -10,6 +11,8 @@ class Home extends StatelessWidget {
       children: const [
         SizedBox(height: 40),
         Search(),
+        SizedBox(height: 20),
+        Filters(),
       ],
     );
   }
