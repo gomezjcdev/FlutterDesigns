@@ -12,11 +12,15 @@ class AppTheme {
   static const Color _greenTitle = Color(0xFF5CB287);
   static const Color _grayTitle = Color(0xFF9D9D9D);
   static const Color _profileBackground = Color(0xFFD5EBE1);
+  static const Color _grayBackground = Color(0xFFF6F6F6);
+  static const Color _hintText = Color(0xFFA7A7A7);
 
   static Color get tabColor => _tabColor;
   static Color get greenTitle => _greenTitle;
   static Color get grayTitle => _grayTitle;
   static Color get profileBackground => _profileBackground;
+  static Color get grayBackground => _grayBackground;
+  static Color get hintText => _hintText;
 
   static final ThemeData customTheme = ThemeData(
     scaffoldBackgroundColor: _primaryVariantColor,
