@@ -64,7 +64,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             const SizedBox(width: 10),
             Text(
               selected ? title : '',
-              style: Theme.of(context).textTheme.headline4!.copyWith(color: Colors.white),
+              style: Theme.of(context).textTheme.headline3!.copyWith(color: Colors.white),
             )
           ]),
         ),
