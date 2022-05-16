@@ -15,6 +15,8 @@ class AppTheme {
   static const Color _grayBackground = Color(0xFFF6F6F6);
   static const Color _hintText = Color(0xFFA7A7A7);
   static const Color _colorBlack = Color(0xFF1B1B1B);
+  static const Color _imageBackground1 = Color(0xFFC5CFD3);
+  static const Color _imageBackground2 = Color(0xFFEBD3AD);
 
   static Color get tabColor => _tabColor;
   static Color get greenTitle => _greenTitle;
@@ -23,6 +25,8 @@ class AppTheme {
   static Color get grayBackground => _grayBackground;
   static Color get hintText => _hintText;
   static Color get colorBlack => _colorBlack;
+  static Color get imageBackground1 => _imageBackground1;
+  static Color get imageBackground2 => _imageBackground2;
 
   static final ThemeData customTheme = ThemeData(
     scaffoldBackgroundColor: _primaryVariantColor,
