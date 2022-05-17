@@ -16,7 +16,7 @@ class AnimalList extends StatelessWidget {
       shrinkWrap: true,
       itemBuilder: (context, index) {
         final animal = animals[index];
-        return AnimalCard(animal: animal);
+        return AnimalCard(animal: animal, imageLeft: index % 2 != 0);
       },
       itemCount: animals.length,
       separatorBuilder: (_, __) => const SizedBox(height: 20),
