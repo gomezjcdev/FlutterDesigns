@@ -14,4 +14,5 @@ Repo to store my practice flutter designs.
 
 ## 2. Pet Adoption App: Dribbble Design [Link](https://dribbble.com/shots/14954592-Pet-Adoption-App)
 <br />
-InProgress...
+<div style="display:flex; gap: 10px; flex-wrap: wrap">
+<img src="https://raw.githubusercontent.com/gomezjcdev/FlutterDesigns/main/images/PetApp/Home_Pet.png" alt="drawing" width="200" />
