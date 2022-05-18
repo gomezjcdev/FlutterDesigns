@@ -17,6 +17,7 @@ class AppTheme {
   static const Color _colorBlack = Color(0xFF1B1B1B);
   static const Color _imageBackground1 = Color(0xFFC5CFD3);
   static const Color _imageBackground2 = Color(0xFFEBD3AD);
+  static const Color _yellowTitle = Color(0xFFECC05B);
 
   static Color get tabColor => _tabColor;
   static Color get greenTitle => _greenTitle;
@@ -27,6 +28,7 @@ class AppTheme {
   static Color get colorBlack => _colorBlack;
   static Color get imageBackground1 => _imageBackground1;
   static Color get imageBackground2 => _imageBackground2;
+  static Color get yellowTitle => _yellowTitle;
 
   static final ThemeData customTheme = ThemeData(
     scaffoldBackgroundColor: _primaryVariantColor,
@@ -56,6 +58,7 @@ class AppTheme {
     headline1: _lightScreenHeading1TextStyle,
     headline2: _lightScreenHeading2TextStyle,
     headline3: _lightScreenHeading3TextStyle,
+    headline4: _lightScreenHeading4TextStyle
   );
 
   static const TextStyle _lightScreenHeading1TextStyle = TextStyle(
@@ -75,6 +78,13 @@ class AppTheme {
   static const TextStyle _lightScreenHeading3TextStyle = TextStyle(
     fontSize: 14.0,
     fontWeight: FontWeight.w600,
+    color: _onPrimaryColor,
+    fontFamily: "Roboto",
+  );
+
+  static const TextStyle _lightScreenHeading4TextStyle = TextStyle(
+    fontSize: 12.0,
+    fontWeight: FontWeight.w500,
     color: _onPrimaryColor,
     fontFamily: "Roboto",
   );

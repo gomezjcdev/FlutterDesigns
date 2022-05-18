@@ -37,7 +37,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                 selected: optionSelected == 1),
             _option(2, FontAwesomeIcons.cubes, 'History',
                 selected: optionSelected == 2),
-            _option(3, FontAwesomeIcons.user, 'Profile',
+            _option(3, FontAwesomeIcons.solidUser, 'Profile',
                 selected: optionSelected == 3),
           ],
         ),

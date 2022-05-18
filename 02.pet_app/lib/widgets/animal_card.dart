@@ -19,8 +19,8 @@ class AnimalCard extends StatelessWidget {
       mainAxisAlignment:
           imageLeft ? MainAxisAlignment.start : MainAxisAlignment.end,
       children: [
-        imageLeft ? _image() : _info(),
-        imageLeft ? _info() : _image()
+        imageLeft ? _image() : _info(context),
+        imageLeft ? _info(context) : _image()
       ],
     );
   }
@@ -45,7 +45,7 @@ class AnimalCard extends StatelessWidget {
     );
   }
 
-  Widget _info() {
+  Widget _info(BuildContext context) {
     const double radius = 30;
     return Flexible(
       child: Container(
@@ -70,26 +70,51 @@ class AnimalCard extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(animal.name),
+                  Text(animal.name,
+                      style: Theme.of(context).textTheme.headline2!.copyWith(
+                          color: imageLeft
+                              ? AppTheme.yellowTitle
+                              : AppTheme.greenTitle)),
                   FaIcon(
                     animal.genred == 'male'
                         ? FontAwesomeIcons.mars
                         : FontAwesomeIcons.venus,
+                    color:
+                        imageLeft ? AppTheme.yellowTitle : AppTheme.greenTitle,
                   )
                 ],
               ),
               const SizedBox(height: 10),
-              Text(animal.breed),
+              Text(animal.breed,
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline3!
+                      .copyWith(color: AppTheme.grayTitle)),
               const SizedBox(height: 5),
-              Text('${animal.age} years old'),
+              Text('${animal.age} years old',
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline4!
+                      .copyWith(color: AppTheme.grayTitle)),
               const SizedBox(height: 10),
               Row(
                 children: [
-                  FaIcon(FontAwesomeIcons.locationDot,
-                      color: AppTheme.greenTitle),
+                  FaIcon(
+                    FontAwesomeIcons.locationDot,
+                    color:
+                        imageLeft ? AppTheme.yellowTitle : AppTheme.greenTitle,
+                  ),
                   const SizedBox(width: 12),
-                  const Text('Distance: '),
-                  Text('${animal.distanceOnKM} Km')
+                  Text('Distance: ',
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline3!
+                          .copyWith(color: AppTheme.grayTitle)),
+                  Text('${animal.distanceOnKM} Km',
+                      style: Theme.of(context).textTheme.headline3!.copyWith(
+                          color: imageLeft
+                              ? AppTheme.yellowTitle
+                              : AppTheme.greenTitle))
                 ],
               )
             ],
